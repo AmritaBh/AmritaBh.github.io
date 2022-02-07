@@ -9,13 +9,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Siddhant Bhambri"
+title                    : "Amrita Bhattacharjee"
 title_separator          : "-"
-name                     : &name "Siddhant Bhambri"
-description              : &description "Computer Science Ph.D. student @ Yochan Lab, ASU"
-url                      : https://sbhambr1.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "Amrita Bhattacharjee"
+description              : &description "Computer Science Ph.D. Student @ DMML, ASU"
+url                      : https://AmritaBh.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "sbhambr1.github.io"
+repository               : "AmritaBh.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -82,14 +82,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Siddhant Bhambri"
+  name             : "Amrita Bhattacharjee"
   avatar           : "profile.jpg"
-  bio              : "CS Ph.D. @ Yochan Lab"
+  bio              : "CS Ph.D. @ DMML"
   location         : "Tempe, AZ"
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=E9I6GbwAAAAJ&hl=en&authuser=1"
-  email            : "siddhantbhambri@asu.edu"
+  googlescholar    : "https://scholar.google.com/citations?user=hdXXMPwAAAAJ&hl=en"
+  email            : "abhatt43@asu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -98,20 +98,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "sbhambr1"
+  github           : "AmritaBh"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/siddhant-bhambri"
+  linkedin         : "https://www.linkedin.com/in/amritabh/"
   orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "sbhambr1"
+  twitter          : "Amrita_Bh"
   vine             :
   weibo            :
   xing             :
