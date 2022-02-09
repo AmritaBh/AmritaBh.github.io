@@ -1,6 +1,6 @@
 layout: archive
-title: "Teaching & Service"
-permalink: /teaching&service/
+title: ["Teaching & Service"](#Teaching-and-Academic-Service)
+permalink: 
 author_profile: true
 ---
 
