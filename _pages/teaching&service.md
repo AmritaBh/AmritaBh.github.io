@@ -1,8 +1,10 @@
+---
 layout: archive
-title: ["Teaching & Service"](#Teaching-and-Academic-Service)
-permalink: 
+title: "Teaching & Service"
+permalink: /teaching&service/
 author_profile: true
 ---
+
 
 <!-- {% if author.googlescholar %}
   You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
