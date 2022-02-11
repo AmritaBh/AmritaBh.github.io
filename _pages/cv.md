@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Here's my [Résumé](https://drive.google.com/file/d/1vkFBrELWD9oTelsy0FwExiQGY0Ys07_v/view?usp=sharing).
+Here's my [Résumé](https://drive.google.com/file/d/16oOdvtKFvu6WoFZ2KkqyXJdpxDBXmyzF/view?usp=sharing).
 
 <!-- <embed src="https://github.com/sbhambr1/sbhambr1.github.io/raw/main/files/R%C3%A9sum%C3%A9.pdf"" type="application/pdf" width="800px" height="2100px" /> -->
 
