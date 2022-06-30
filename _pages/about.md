@@ -14,6 +14,6 @@ Currently, I am interning as a Software Systems Research Intern at [Nokia Bell L
 
 <br/><br/><br/>
 
-Meet my wonderful rescue cat, Luna!  
+<div style="text-align: right"> Meet my wonderful rescue cat, Luna! </div>
 
-<img src="/files/luna.jpg" alt="drawing" width="200"/>
+<img align="right" src="/files/luna.jpg" alt="drawing" width="200"/>
