@@ -4,7 +4,6 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2020-project-coord-472
 venue: "School of CS & AI, ASU"
-date: 
 location: "Tempe, AZ"
 ---
 

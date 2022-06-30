@@ -4,7 +4,6 @@ collection: teaching
 type: "Undergraduate and Graduate Courses"
 permalink: /teaching/2019-cis-wp
 venue: "W.P. Carey School of Business, ASU"
-date: 
 location: "Tempe, AZ"
 ---
 
