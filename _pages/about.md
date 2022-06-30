@@ -12,8 +12,8 @@ I am a second year Ph.D. student under the supervision of [Dr. Huan Liu](https:/
 
 Currently, I am interning as a Software Systems Research Intern at [Nokia Bell Labs](https://www.bell-labs.com/#gref).
 
-<br/><br/><br/>
+<br/><br/>
 
 <div style="text-align: right"> Meet my wonderful rescue cat, Luna! </div>
-
+<br/>
 <img align="right" src="/files/luna.jpg" alt="drawing" width="200"/>
