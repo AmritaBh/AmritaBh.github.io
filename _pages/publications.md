@@ -13,7 +13,7 @@ You can also find my articles on <u><a href="https://scholar.google.com/citation
 
 1. **EAGLE: A Domain Generalization Framework for AI-generated Text Detection.** _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://arxiv.org/abs/2403.15690)
 
-2. **Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales.** Ayushi Nirmal*, _Amrita Bhattacharjee_*, Paras Sheth, Huan Liu. (* Equal contribution) [paper link](https://arxiv.org/abs/2403.12403)
+2. **Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales.** Ayushi Nirmal\*, _Amrita Bhattacharjee_\*, Paras Sheth, Huan Liu. (* Equal contribution) [paper link](https://arxiv.org/abs/2403.12403)
 
 3. **Large Language Models for Data Annotation: A Survey.** Zhen Tan, Alimohammad Beigi, Song Wang, Ruocheng Guo, _Amrita Bhattacharjee_, Bohan Jiang, Mansooreh Karami, Jundong Li, Lu Cheng, Huan Liu. [paper link](https://arxiv.org/abs/2402.13446)
 
