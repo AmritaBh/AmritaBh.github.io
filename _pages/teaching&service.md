@@ -1,8 +1,10 @@
 ---
 layout: archive
 title: "Teaching & Service"
-permalink: /teaching-service/
+permalink: /teaching&service/
 author_profile: true
+redirect_from:
+ - /teaching-service
 ---
 
 {% include base_path %}
