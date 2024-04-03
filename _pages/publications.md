@@ -21,7 +21,7 @@ _____
 
 ## Accepted Publications
 
-1. **Harnessing Artificial Intelligence to Combat Online Hate: Exploring the Challenges and Opportunities of Large Language Models in Hate Speech Detection.** Tharindu Kumarage*, _Amrita Bhattacharjee_*, Joshua Garland.
+1. **Harnessing Artificial Intelligence to Combat Online Hate: Exploring the Challenges and Opportunities of Large Language Models in Hate Speech Detection.** Tharindu Kumarage\*, _Amrita Bhattacharjee_\*, Joshua Garland.
 
 
 **PAGE BEING UPDATED....**
