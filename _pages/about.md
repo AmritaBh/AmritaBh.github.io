@@ -15,6 +15,8 @@ When I'm not working, I enjoy traveling, hiking, kayaking, camping and chilling 
 
 # 📢 News
 
+\[Mar 2024\] Our demo paper "ResumeFlow: An LLM-facilitated Pipeline for Personalized Resume Generation and Refinement" has been accepted at SIGIR 2024! [Paper Link](https://arxiv.org/abs/2402.06221)
+
 \[Jan 2024\] I have accepted an offer to join **NVIDIA** as an Applied Research Intern for Summer 2024, working on LLM Safety!
 
 \[Jan 2024\] Invited to serve as a Program Committee member at IJCAI 2024 (Survey Track).
@@ -23,7 +25,7 @@ When I'm not working, I enjoy traveling, hiking, kayaking, camping and chilling 
 
 \[Dec 2023\] Our paper "Towards LLM-guided Causal Explainability for Black-box Text Classifiers" has been accepted at the AAAI 2024 Responsible Language Models worskhop, Vancouver, Canada! [Paper Link](https://arxiv.org/abs/2309.13340)
 
-\[Nov 2023\] Our paper "ConDA: Contrastive Domain Adaptation for AI-generated Text Detection" won the 🏆 Oustanding Paper Award 🏆 at IJCNLP-AACL 2023, held in Bali, Indonesia! [Paper Link](https://arxiv.org/abs/2309.03992)
+\[Nov 2023\] Our paper "ConDA: Contrastive Domain Adaptation for AI-generated Text Detection" won the 🏆 **Oustanding Paper Award** 🏆 at IJCNLP-AACL 2023, held in Bali, Indonesia! [Paper Link](https://arxiv.org/abs/2309.03992)
 
 
 
