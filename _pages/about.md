@@ -15,6 +15,8 @@ When I'm not working, I enjoy traveling, hiking, kayaking, camping and chilling 
 
 # 📢 News
 
+\[Apr 2024\] Gave an invited talk at the ASU Cronkite School of Journalism for an AI in Journalism course for Masters students in Investigative Journalism, on **Large Lnaguage Models: Opportunites and Threats in Journalism**. [Slides](https://drive.google.com/file/d/1qmG6btQ0CSf03iGNOzaX7LMmh5yyDb8N/view?usp=sharing)
+
 \[Mar 2024\] Our demo paper "ResumeFlow: An LLM-facilitated Pipeline for Personalized Resume Generation and Refinement" has been accepted at SIGIR 2024! [Paper Link](https://arxiv.org/abs/2402.06221)
 
 \[Jan 2024\] I have accepted an offer to join **NVIDIA** as an Applied Research Intern for Summer 2024, working on LLM Safety!
