@@ -13,17 +13,28 @@ redirect_from:
 
 ### Current Mentees:
 
+1. Saurabh Bhausaheb Zinjad (MS CS) [LinkedIN](https://www.linkedin.com/in/saurabhzinjad/)
+2. Aryan Vinod Keluskar (FURI Undergrad) [LinkedIN](https://www.linkedin.com/in/aryankeluskar/)
+
+
+### Past Mentees:
+
 1. Ayushi Nirmal (MS CS) [LinkedIN](https://www.linkedin.com/in/ayushi-nirmal/)
-2. Saurabh Bhausaheb Zinjad (MS CS) [LinkedIN](https://www.linkedin.com/in/saurabhzinjad/)
-3. Baixi Jiao (Undergrad)
-4. Punit Sai Arani (Undergrad - Honors thesis)
-5. Neha Balamurugan (Undergrad - Honors thesis)
+4. Punit Sai Arani (Undergrad - Honors thesis) [LinkedIN](https://www.linkedin.com/in/punitarani/)
+5. Neha Balamurugan (Undergrad - Honors thesis) [LinkedIN](https://www.linkedin.com/in/neha-balamurugan-8455981b1/)
 
-### Past mentoring
+Others:
 
-Mentored 3 women for pursuing a research career in Computer Science via Women in Machine Learning (WiML) (Fall 2022)
+- Mentored 3 women for pursuing a research career in Computer Science via Women in Machine Learning (WiML) (Fall 2022)
 
 ## Teaching
+
+### Fall 2024: Project Coordinator and Guest Lecturer: CSE 472 - Social Media Mining
+
+I am currently serving as the Project Coordinator and a Guest Lecturer for the course CSE 472: Social Media Mining, offered by my Ph.D advisor Dr. Huan Liu, in Fall 2024. Guest lectures: (1) Data Mining, (2) Introduction to Large Language Models: The Good, Bad and the Ugly [Slides](https://docs.google.com/presentation/d/1w-ZHnCWK4SdOFzwwzuNWrPF2aKz3T-ldNSniVL-6nGQ/edit?usp=sharing).
+As project coordinnator: I am in charge of leading how course projects are designed, as well as designing two specific course project, mentoring and assisting students, and grading the final projects.
+
+
 
 ### Fall 2023: Project Coordinator and Mentor: Barrett Honors College
 
@@ -54,10 +65,10 @@ I was appointed as the TA for the undergraduate course Principles of Programming
 ## Reviewing & Conference Duties
 
 
-1. Program Committee Member for **AAAI 2023, AAAI 2024, IJCAI 2024 (Survey), SBP-BRiMS 2023**
+1. Program Committee Member for **SDM 2025, AAAI 2025, AAAI 2024, AAAI 2023, IJCAI 2024 (Survey), SBP-BRiMS 2024, SBP-BRiMS 2023**
 
 
-2. Reviewer for SNAM: Social Network Analysis and Mining, JNCA: Journal of Network and Computer Applications, IPM: Information Processing and Management, CogSys: Cognitive Systems Research, AAAI 2023, SBP-BRiMS 2023, AAAI 2024
+2. External reviewer for SNAM: Social Network Analysis and Mining, JNCA: Journal of Network and Computer Applications, IPM: Information Processing and Management, CogSys: Cognitive Systems Research, Behavior and Information Technology, MINT workshop at NeuRIPS 2024.
 
 3. Sub-reviewer for CIKM 2020, ASONAM 2020
 
