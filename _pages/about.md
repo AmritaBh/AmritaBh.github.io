@@ -55,4 +55,10 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 <div style="text-align: center"> Meet my wonderful rescue cat, Luna! </div>
 <br/>
-<img align="center" src="/files/luna.jpg" alt="drawing" width="200"/>
+<p float="left">
+  <img src="/files/luna1.jpg" width="32%" />
+  <img src="/files/luna2.jpg" width="32%" /> 
+  <img src="/files/luna2.jpg" width="32%" />
+</p>
+
+<!-- <img align="center" src="/files/luna.jpg" alt="drawing" width="200"/> -->
