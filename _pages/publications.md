@@ -20,7 +20,7 @@ _____
 ## Selected Accepted Publications
 
 
-1. **Defending Against Social Engineering Attacks in the Age of LLMs.** Lin Ai\*, Tharindu Kumarage\*, Amrita Bhattacharjee\*, Zizhou Liu, Zheng Hui, Michael Davinroy, James Cook, Laura Cassani, Kirill Trapeznikov, Matthias Kirchner, Arslan Basharat, Anthony Hoogs, Joshua Garland, Huan Liu, Julia Hirschberg. **\[EMNLP 2024\]**
+1. **Defending Against Social Engineering Attacks in the Age of LLMs.** Lin Ai\*, Tharindu Kumarage\*, _Amrita Bhattacharjee_\*, Zizhou Liu, Zheng Hui, Michael Davinroy, James Cook, Laura Cassani, Kirill Trapeznikov, Matthias Kirchner, Arslan Basharat, Anthony Hoogs, Joshua Garland, Huan Liu, Julia Hirschberg. **\[EMNLP 2024\]**
 
 2. **Large Language Models for Data Annotation: A Survey.** Zhen Tan*, Dawei Li*, Song Wang*, Alimohammad Beigi, Bohan Jiang, _Amrita Bhattacharjee_, Mansooreh Karami, Jundong Li, Lu Cheng, Huan Liu. [paper link](https://arxiv.org/abs/2402.13446) **\[EMNLP 2024\]**
 
@@ -38,12 +38,12 @@ _____
 
 7. **Harnessing Artificial Intelligence to Combat Online Hate: Exploring the Challenges and Opportunities of Large Language Models in Hate Speech Detection.** Tharindu Kumarage\*, _Amrita Bhattacharjee_\*, Joshua Garland. **\[Book Chapter\]**
 
-10. **Text Transformations in Contrastive Self-Supervised Learning: A Review.** Amrita Bhattacharjee, Mansooreh Karami, Huan Liu. [paper link](https://www.ijcai.org/proceedings/2022/0757.pdf) **\[IJCAI 2022 (Survey)\]** 
+10. **Text Transformations in Contrastive Self-Supervised Learning: A Review.** _Amrita Bhattacharjee_\*, Mansooreh Karami\*, Huan Liu. [paper link](https://www.ijcai.org/proceedings/2022/0757.pdf) **\[IJCAI 2022 (Survey)\]** 
 
 
 
-{% include base_path %}
+<!-- {% include base_path %}
 
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
-{% endfor %}
+{% endfor %} -->

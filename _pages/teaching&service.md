@@ -31,8 +31,9 @@ Others:
 
 ### Fall 2024: Project Coordinator and Guest Lecturer: CSE 472 - Social Media Mining
 
-I am currently serving as the Project Coordinator and a Guest Lecturer for the course CSE 472: Social Media Mining, offered by my Ph.D advisor Dr. Huan Liu, in Fall 2024. Guest lectures: (1) Data Mining, (2) Introduction to Large Language Models: The Good, Bad and the Ugly [Slides](https://docs.google.com/presentation/d/1w-ZHnCWK4SdOFzwwzuNWrPF2aKz3T-ldNSniVL-6nGQ/edit?usp=sharing).
-As project coordinnator: I am in charge of leading how course projects are designed, as well as designing two specific course project, mentoring and assisting students, and grading the final projects.
+I am currently serving as the Project Coordinator and a Guest Lecturer for the course CSE 472: Social Media Mining, offered by my Ph.D advisor Dr. Huan Liu, in Fall 2024. Guest lectures: (1) _Data Mining_, (2) _Introduction to Large Language Models: The Good, Bad and the Ugly_ [Slides](https://docs.google.com/presentation/d/1w-ZHnCWK4SdOFzwwzuNWrPF2aKz3T-ldNSniVL-6nGQ/edit?usp=sharing). 
+
+As a project coordinator, I am in charge of leading how course projects are designed, as well as designing two specific course project, mentoring and assisting students, and grading the final projects.
 
 
 
@@ -43,7 +44,7 @@ I served as the Project Coordinator whereby I designed and developed a project f
 ### Fall 2023: Project Coordinator & Invited Speaker: CSE 472 - Social Media Mining
 
 I served as the Project Coordinator and an Invited Speaker for the course CSE 472: Social Media Mining, offered by my Ph.D advisor Dr. Huan Liu, in Fall 2023. 
-As project coordinnator: I was in charge of designing a course project, mentoring and assisting students, and grading the final projects. Project topic I designed: **Large Language Models as Components in a Machine Learning Pipeline**. 
+As a project coordinator, I was in charge of designing a course project, mentoring and assisting students, and grading the final projects. Project topic I designed: **Large Language Models as Components in a Machine Learning Pipeline**. 
 
 Invited lecture on:  A Primer on Large Language Models 
 
