@@ -31,11 +31,11 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 \[May 2024\] Invited to be a Program Committee Member for SBP-BRiMS 2024.
 
-\[May 2024\] My chat with ScienceNewsExplores(SNE) got featured in this [SNE news story](https://www.snexplores.org/article/a-new-test-could-help-weed-out-ai-generated-text).
+\[May 2024\] My chat with ScienceNewsExplores (SNE) got featured in this [SNE news story](https://www.snexplores.org/article/a-new-test-could-help-weed-out-ai-generated-text).
 
-\[Apr 2024\] Our paper "Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales" got accepted to NNACL WOAH 2024!
+\[Apr 2024\] Our paper "Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales" got accepted to NAACL WOAH 2024!
 
-\[Apr 2024\] Gave an invited talk at the ASU Cronkite School of Journalism for an AI in Journalism course for Masters students in Investigative Journalism, on **Large Lnaguage Models: Opportunites and Threats in Journalism**. [Slides](https://drive.google.com/file/d/1qmG6btQ0CSf03iGNOzaX7LMmh5yyDb8N/view?usp=sharing)
+\[Apr 2024\] Gave an invited talk at the ASU Cronkite School of Journalism for an AI in Journalism course for Masters students in Investigative Journalism, on **Large Language Models: Opportunites and Threats in Journalism**. [Slides](https://drive.google.com/file/d/1qmG6btQ0CSf03iGNOzaX7LMmh5yyDb8N/view?usp=sharing)
 
 \[Mar 2024\] Our demo paper "ResumeFlow: An LLM-facilitated Pipeline for Personalized Resume Generation and Refinement" has been accepted at SIGIR 2024! [Paper Link](https://arxiv.org/abs/2402.06221)
 
@@ -53,7 +53,7 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 <br/><br/>
 
-<div style="text-align: center"> Meet my wonderful rescue cat, Luna! </div>
+<div style="text-align: center"> Meet my wonderful rescue cat, Luna! 🐈‍⬛</div>
 <br/>
 <p float="left">
   <img src="/files/luna1.jpg" width="32%" />
