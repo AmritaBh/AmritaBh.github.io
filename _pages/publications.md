@@ -11,9 +11,11 @@ You can find all my articles at <u><a href="https://scholar.google.com/citations
 
 ## Recent Preprints!
 
-1. **EAGLE: A Domain Generalization Framework for AI-generated Text Detection.** _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://arxiv.org/abs/2403.15690)
+1. **Towards Inference-time Category-wise Safety Steering for Large Language Models.** _Amrita Bhattacharjee_\*,  Shaona Ghosh\*, Traian Rebedea, Christopher Parisien. [paper link](https://arxiv.org/abs/2410.01174) [Work done at NVIDIA!]
 
-2. **Zero-shot LLM-guided Counterfactual Generation for Text.** _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://arxiv.org/abs/2405.04793)
+2. **EAGLE: A Domain Generalization Framework for AI-generated Text Detection.** _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://arxiv.org/abs/2403.15690)
+
+3. **Zero-shot LLM-guided Counterfactual Generation for Text.** _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://arxiv.org/abs/2405.04793)
 
 _____
 
@@ -22,7 +24,7 @@ _____
 
 1. **Defending Against Social Engineering Attacks in the Age of LLMs.** Lin Ai\*, Tharindu Kumarage\*, _Amrita Bhattacharjee_\*, Zizhou Liu, Zheng Hui, Michael Davinroy, James Cook, Laura Cassani, Kirill Trapeznikov, Matthias Kirchner, Arslan Basharat, Anthony Hoogs, Joshua Garland, Huan Liu, Julia Hirschberg. [paper link](https://arxiv.org/abs/2406.12263) **\[EMNLP 2024\]**
 
-2. **Large Language Models for Data Annotation: A Survey.** Zhen Tan*, Dawei Li*, Song Wang*, Alimohammad Beigi, Bohan Jiang, _Amrita Bhattacharjee_, Mansooreh Karami, Jundong Li, Lu Cheng, Huan Liu. [paper link](https://arxiv.org/abs/2402.13446) **\[EMNLP 2024\]**
+2. **Large Language Models for Data Annotation: A Survey.** Zhen Tan\*, Dawei Li\*, Song Wang*, Alimohammad Beigi, Bohan Jiang, _Amrita Bhattacharjee_, Mansooreh Karami, Jundong Li, Lu Cheng, Huan Liu. [paper link](https://arxiv.org/abs/2402.13446) **\[EMNLP 2024\]**
 
 3. **Towards LLM-guided Causal Explainability for Black-box Text Classifiers.**  _Amrita Bhattacharjee_, Raha Moraffah, Joshua Garland, Huan Liu. [paper link](https://www.researchgate.net/profile/Amrita-Bhattacharjee-3/publication/378142099_Towards_LLM-guided_Causal_Explainability_for_Black-box_Text_Classifiers/links/65c988bd1bed776ae341441d/Towards-LLM-guided-Causal-Explainability-for-Black-box-Text-Classifiers.pdf) **\[AAAI ReLM 2024\]**
 
