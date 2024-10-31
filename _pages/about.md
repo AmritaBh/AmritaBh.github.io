@@ -15,7 +15,14 @@ When I'm not working, I enjoy traveling, hiking, kayaking, camping and chilling 
 
 _<span style="color:red">I'm currently on the industry job market, looking for Applied Scientist, Research Scientist or related roles, preferably around LLM research + product. Please reach out!</span>_
 
+📢📢 For speaking opportunities, check out my speaker profile [here](https://sessionize.com/amrita-bhattacharjee/), and reach out!
+
+
 # 📢 News
+
+\[Oct 2024\] Our paper **Zero-shot LLM-guided Counterfactual Generation: A Case Study on NLP Model Evaluation** has been accepted to [IEEE BigData 2024](https://www3.cs.stonybrook.edu/~ieeebigdata2024/)!
+
+\[Oct 2024\] Our paper **Towards Inference-time Category-wise Safety Steering for Large Language Models** [Work done with NVIDIA!] got accepted to the [Safe Generative AI Workshop](https://safegenaiworkshop.github.io/) at [NeurIPS 2024](https://neurips.cc/)!
 
 \[Sep 2024\] Two papers accepted at EMNLP 2024 Main Track: (1) [Defending Against Social Engineering Attacks in the Age of LLMs](https://arxiv.org/abs/2406.12263), (2) [Large Language Models for Data Annotation: A Survey](https://arxiv.org/abs/2402.13446).
 
@@ -33,7 +40,7 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 \[May 2024\] My chat with ScienceNewsExplores (SNE) got featured in this [SNE news story](https://www.snexplores.org/article/a-new-test-could-help-weed-out-ai-generated-text).
 
-\[Apr 2024\] Our paper "Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales" got accepted to NAACL WOAH 2024!
+\[Apr 2024\] Our paper **Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales** got accepted to NAACL WOAH 2024!
 
 \[Apr 2024\] Gave an invited talk at the ASU Cronkite School of Journalism for an AI in Journalism course for Masters students in Investigative Journalism, on **Large Language Models: Opportunites and Threats in Journalism**. [Slides](https://drive.google.com/file/d/1qmG6btQ0CSf03iGNOzaX7LMmh5yyDb8N/view?usp=sharing)
 
