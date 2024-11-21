@@ -22,7 +22,7 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 \[Oct 2024\] Our paper **Zero-shot LLM-guided Counterfactual Generation: A Case Study on NLP Model Evaluation** has been accepted to [IEEE BigData 2024](https://www3.cs.stonybrook.edu/~ieeebigdata2024/)!
 
-\[Oct 2024\] Our paper **Towards Inference-time Category-wise Safety Steering for Large Language Models** [Work done with NVIDIA!] got accepted to the [Safe Generative AI Workshop](https://safegenaiworkshop.github.io/) at [NeurIPS 2024](https://neurips.cc/)!
+\[Oct 2024\] Our paper **Towards Inference-time Category-wise Safety Steering for Large Language Models** [Work done with NVIDIA!] has been accepted to the [Safe Generative AI Workshop](https://safegenaiworkshop.github.io/) at [NeurIPS 2024](https://neurips.cc/)!
 
 \[Sep 2024\] Two papers accepted at EMNLP 2024 Main Track: (1) [Defending Against Social Engineering Attacks in the Age of LLMs](https://arxiv.org/abs/2406.12263), (2) [Large Language Models for Data Annotation: A Survey](https://arxiv.org/abs/2402.13446).
 
