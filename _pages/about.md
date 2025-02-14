@@ -13,12 +13,17 @@ redirect_from:
 I am a final year Ph.D. student under the supervision of [Dr. Huan Liu](https://www.public.asu.edu/~huanliu/) at the [Data Mining and Machine Learning Lab](https://dmml.asu.edu/home) at the School of CS & AI, Arizona State University. My current research primarily focuses on: (i) leveraging large language models (LLMs) for human-intensive tasks in a machine learning pipeline, (ii) robust detection of AI-generated content, and (iii) NLP applications in domain adaptation and domain generalization. During the summer of 2024, I was an Applied Research Intern at [NVIDIA](https://www.nvidia.com/en-us/) [NeMo Guardrails](https://blogs.nvidia.com/blog/ai-chatbot-guardrails-nemo/), working with Christopher Parisien and Shaona Ghosh, on inference-time safety steering of large language models(LLMs). During the summer of 2022, I interned at [Nokia Bell Labs](https://www.bell-labs.com/#gref) as a Software Systems Research Intern, under the guidance of Buvaneswari Ramanan and Thomas Woo, where I worked on problems in the realm of continual learning and low-resource learning in real-world use-cases. 
 When I'm not working, I enjoy traveling, hiking, kayaking, camping and chilling with my cat Luna!
 
-_<span style="color:red">I'm currently on the industry job market, looking for Applied Scientist, Research Scientist or related roles, preferably around LLM research + product. Please reach out!</span>_
 
 📢📢 For speaking opportunities, check out my speaker profile [here](https://sessionize.com/amrita-bhattacharjee/), and reach out!
 
 
 # 📢 News
+
+\[Feb 2025\] I'm speaking at [CactusCon 13](https://www.cactuscon.com/) on **Building Trust in AI: On Safe and Responsible Use of LLMs**. [Slides](https://drive.google.com/file/d/1u2AHdtkxr3mFTM100FqaUAOYBqBTbfsX/view?usp=sharing)
+
+\[Jan 2025\] I accepted a full-time offer as an **Applied Scientist II at Amazon, Palo Alto, CA** where I will be working on LLM post-training and alignment!
+
+\[Nov 2024\] Received the **NSF Travel Award** for attending IEEE BigData 2024!
 
 \[Oct 2024\] Our paper **Zero-shot LLM-guided Counterfactual Generation: A Case Study on NLP Model Evaluation** has been accepted to [IEEE BigData 2024](https://www3.cs.stonybrook.edu/~ieeebigdata2024/)!
 
@@ -26,7 +31,7 @@ _<span style="color:red">I'm currently on the industry job market, looking for A
 
 \[Sep 2024\] Two papers accepted at EMNLP 2024 Main Track: (1) [Defending Against Social Engineering Attacks in the Age of LLMs](https://arxiv.org/abs/2406.12263), (2) [Large Language Models for Data Annotation: A Survey](https://arxiv.org/abs/2402.13446).
 
-\[Sep 2024\] Delivered an in-person tutorial on "Defending Against Generative AI Threats in NLP" at SBP-BRiMS 2024, Pittsburgh, PA, USA. [Tutorial Resources](https://github.com/AmritaBh/sbp24-llm-attack-defense-tutorial).
+\[Sep 2024\] Delivered an in-person tutorial on **Defending Against Generative AI Threats in NLP** at SBP-BRiMS 2024, Pittsburgh, PA, USA. [Tutorial Resources](https://github.com/AmritaBh/sbp24-llm-attack-defense-tutorial).
 
 \[Sep 2024\] Received the SBP-BRiMS 2024 Student Travel Award!
 

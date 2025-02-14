@@ -66,10 +66,10 @@ I was appointed as the TA for the undergraduate course Principles of Programming
 ## Reviewing & Conference Duties
 
 
-1. Program Committee Member for **SDM 2025, AAAI 2025, AAAI 2024, AAAI 2023, IJCAI 2024 (Survey), SBP-BRiMS 2024, SBP-BRiMS 2023**
+1. Program Committee Member for **IJCAI 2025 (Survey), SDM 2025, AAAI 2025, AAAI 2024, AAAI 2023, IJCAI 2024 (Survey), SBP-BRiMS 2024, SBP-BRiMS 2023**
 
 
-2. External reviewer for SNAM: Social Network Analysis and Mining, JNCA: Journal of Network and Computer Applications, IPM: Information Processing and Management, CogSys: Cognitive Systems Research, Behavior and Information Technology, MINT workshop at NeuRIPS 2024.
+2. External reviewer for SNAM: Social Network Analysis and Mining, JNCA: Journal of Network and Computer Applications, IPM: Information Processing and Management, CogSys: Cognitive Systems Research, Behavior and Information Technology, MINT workshop at NeuRIPS 2024, SSHO: Social Sciences & Humanities Open (Elsevier), ACL SRW 2025, IJCAI HAI (Human Aware AI) 2025.
 
 3. Sub-reviewer for CIKM 2020, ASONAM 2020
 
