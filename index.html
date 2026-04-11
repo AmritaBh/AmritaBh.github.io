@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amrita Bhattacharjee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0c0f14;
+  --bg-card: #13161d;
+  --bg-card-hover: #191d27;
+  --surface: #1a1e28;
+  --border: #252a36;
+  --text: #e4e6ec;
+  --text-secondary: #8b90a0;
+  --accent: #6c9cfc;
+  --accent-warm: #f0a060;
+  --accent-green: #6fcf97;
+  --accent-rose: #f07090;
+  --gradient-1: linear-gradient(135deg, #6c9cfc 0%, #a87cf8 100%);
+  --gradient-2: linear-gradient(135deg, #f0a060 0%, #f07090 100%);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── NOISE OVERLAY ─── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ─── NAV ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(12, 15, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.3s;
+}
+
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.8rem 2rem;
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.nav-logo span { color: var(--accent); }
+
+.nav-links { display: flex; gap: 0.25rem; }
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.25s;
+  letter-spacing: 0.01em;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.hamburger {
+  display: none;
+  background: none; border: none; cursor: pointer;
+  width: 28px; height: 20px; position: relative;
+}
+.hamburger span {
+  display: block; width: 100%; height: 2px;
+  background: var(--text); border-radius: 2px;
+  position: absolute; left: 0;
+  transition: all 0.3s;
+}
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; }
+.hamburger span:nth-child(3) { top: 18px; }
+
+/* ─── SECTIONS ─── */
+.section {
+  display: none;
+  animation: fadeUp 0.5s ease;
+}
+.section.active { display: block; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+
+/* ─── HERO ─── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(108, 156, 252, 0.08) 0%, transparent 70%);
+  top: -100px; right: -100px;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(168, 124, 248, 0.06) 0%, transparent 70%);
+  bottom: -100px; left: -100px;
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative; z-index: 1;
+}
+
+.hero-text h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.5rem;
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-text h1 .gradient-text {
+  background: var(--gradient-1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  max-width: 540px;
+}
+
+.hero-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-tags span {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  border-radius: 100px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all 0.25s;
+}
+.hero-tags span:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero-links {
+  display: flex; gap: 0.75rem; flex-wrap: wrap;
+}
+
+.hero-links a {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+.btn-primary {
+  background: var(--gradient-1);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(108, 156, 252, 0.25);
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(108, 156, 252, 0.35); }
+
+.btn-outline {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.hero-photo-wrapper {
+  display: flex; justify-content: center; align-items: center;
+}
+
+.hero-photo {
+  width: 340px; height: 340px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 3px solid var(--border);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+  transition: transform 0.4s;
+}
+.hero-photo:hover { transform: scale(1.02) rotate(-1deg); }
+
+/* ─── NEWS ─── */
+.news-section {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.news-list {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.news-list::-webkit-scrollbar { width: 4px; }
+.news-list::-webkit-scrollbar-track { background: var(--bg); }
+.news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+.news-item {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all 0.25s;
+  font-size: 0.9rem;
+}
+.news-item:hover { border-color: var(--accent); background: var(--bg-card-hover); }
+
+.news-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 500;
+  padding-top: 2px;
+}
+
+.news-content { color: var(--text-secondary); line-height: 1.6; }
+.news-content strong { color: var(--text); font-weight: 600; }
+.news-content a { color: var(--accent); text-decoration: none; }
+.news-content a:hover { text-decoration: underline; }
+
+/* ─── LUNA ─── */
+.luna-section {
+  padding: 3rem 0 5rem;
+}
+
+.luna-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.luna-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.luna-grid img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: all 0.4s;
+}
+.luna-grid img:hover { transform: scale(1.03); box-shadow: 0 16px 48px rgba(0,0,0,0.4); }
+
+/* ─── PUBLICATIONS ─── */
+.pub-page { padding: 100px 0 4rem; }
+
+.pub-list { display: flex; flex-direction: column; gap: 1rem; }
+
+.pub-item {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition: all 0.25s;
+  position: relative;
+}
+.pub-item:hover { border-color: var(--accent); background: var(--bg-card-hover); }
+
+.pub-item.award { border-left: 3px solid var(--accent-warm); }
+
+.pub-venue {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+}
+
+.award-badge {
+  background: var(--gradient-2);
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 100px;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+
+.pub-authors {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.pub-authors .me { color: var(--accent); font-weight: 600; }
+
+.pub-link {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: gap 0.2s;
+}
+.pub-link:hover { gap: 0.5rem; }
+
+.pub-preprints { margin-top: 3rem; }
+
+.scholar-link {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.25s;
+}
+.scholar-link:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ─── TEACHING ─── */
+.teaching-page { padding: 100px 0 4rem; }
+
+.teach-block {
+  margin-bottom: 2.5rem;
+}
+
+.teach-block h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.teach-card {
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 0.75rem;
+  transition: all 0.25s;
+}
+.teach-card:hover { border-color: var(--accent); }
+
+.teach-card h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--text);
+}
+
+.teach-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.teach-card a { color: var(--accent); text-decoration: none; }
+.teach-card a:hover { text-decoration: underline; }
+
+.mentee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.mentee-card {
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex; align-items: center; gap: 1rem;
+  transition: all 0.25s;
+}
+.mentee-card:hover { border-color: var(--accent); }
+
+.mentee-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: var(--gradient-1);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.8rem; color: #fff;
+  flex-shrink: 0;
+}
+
+.mentee-info .mentee-name { font-size: 0.88rem; font-weight: 600; }
+.mentee-info .mentee-role { font-size: 0.75rem; color: var(--text-secondary); }
+.mentee-info a { color: var(--accent); text-decoration: none; font-size: 0.75rem; }
+
+.service-list {
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+
+.service-item {
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.service-item strong { color: var(--text); }
+
+/* ─── TRAVEL PHOTOGRAPHY ─── */
+.travel-page { padding: 100px 0 4rem; }
+
+.travel-intro {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.travel-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+}
+
+.travel-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.travel-card:hover { transform: translateY(-4px); border-color: var(--accent); box-shadow: 0 16px 48px rgba(0,0,0,0.3); }
+
+.travel-card-img {
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.travel-card-img::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(19,22,29,0.8) 0%, transparent 50%);
+}
+
+.travel-card-body {
+  padding: 1.25rem;
+}
+
+.travel-card-location {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.4rem;
+}
+
+.travel-card-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.travel-card-desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.travel-placeholder {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--bg-card);
+  border: 2px dashed var(--border);
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.travel-placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.travel-placeholder h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.travel-placeholder p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* ─── LIGHTBOX ─── */
+.lightbox {
+  position: fixed; inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(12px);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  cursor: zoom-out;
+}
+.lightbox.open { opacity: 1; pointer-events: all; }
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+  transform: scale(0.92);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  object-fit: contain;
+}
+.lightbox.open img { transform: scale(1); }
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%; transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1.5rem;
+  border-radius: 100px;
+  opacity: 0.8;
+  max-width: 80vw;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.2); }
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s;
+}
+.lightbox-nav:hover { background: rgba(255,255,255,0.2); }
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+
+/* Make luna & travel images clickable */
+.luna-grid img, .travel-card-img { cursor: zoom-in; }
+
+/* ─── FOOTER ─── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+footer a { color: var(--accent); text-decoration: none; }
+
+/* ─── MOBILE ─── */
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .nav-links.open { display: flex; }
+
+  .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+  .hero-text h1 { font-size: 2.4rem; }
+  .hero-subtitle { margin: 0 auto 1.5rem; }
+  .hero-tags { justify-content: center; }
+  .hero-links { justify-content: center; }
+  .hero-photo-wrapper { order: -1; }
+  .hero-photo { width: 220px; height: 220px; }
+
+  .luna-grid { grid-template-columns: 1fr; }
+  .luna-grid img { height: 220px; }
+
+  .news-item { grid-template-columns: 1fr; gap: 0.25rem; }
+
+  .travel-grid { grid-template-columns: 1fr; }
+
+  .mentee-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" onclick="showSection('about')">A<span>.</span>B</a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#" class="active" data-section="about" onclick="showSection('about')">About</a>
+      <a href="#" data-section="publications" onclick="showSection('publications')">Publications</a>
+      <a href="#" data-section="teaching" onclick="showSection('teaching')">Teaching & Service</a>
+      <a href="#" data-section="travel" onclick="showSection('travel')">Travel</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+<div class="section active" id="section-about">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Hi there!<br>I'm <span class="gradient-text">Amrita</span> or <span class="gradient-text">Amy</span></h1>
+          <p class="hero-subtitle">
+            Applied Scientist II at Amazon Rufus, working on Personalization and Trust & Safety. Ph.D. in Computer Science from Arizona State University.
+          </p>
+          <div class="hero-tags">
+            <span>&#x1f9e0; LLMs</span>
+            <span>&#x1f6e1;&#xfe0f; AI Safety</span>
+            <span>&#x1f4dd; NLP</span>
+            <span>&#x1f504; Domain Adaptation</span>
+            <span>&#x1f50d; AI-Generated Text Detection</span>
+          </div>
+          <div class="hero-links">
+            <a href="https://scholar.google.com/citations?user=hdXXMPwAAAAJ&hl=en" target="_blank" class="btn-primary">Google Scholar &#x2197;</a>
+            <a href="https://github.com/AmritaBh" target="_blank" class="btn-outline">GitHub &#x2197;</a>
+            <a href="https://sessionize.com/amrita-bhattacharjee/" target="_blank" class="btn-outline">Speaker Profile &#x2197;</a>
+          </div>
+        </div>
+        <div class="hero-photo-wrapper">
+          <img src="images/profile.jpg" alt="Amrita Bhattacharjee" class="hero-photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIO -->
+  <section class="container" style="padding: 0 2rem 2rem;">
+    <div style="max-width:860px; background:var(--bg-card); border:1px solid var(--border); border-radius:16px; padding:2rem;">
+      <p style="color:var(--text-secondary); font-size:0.92rem; line-height:1.8;">
+        I obtained my Ph.D. in Computer Science from the School of CS & AI at Arizona State University, working under
+        <a href="https://www.public.asu.edu/~huanliu/" style="color:var(--accent);text-decoration:none;">Dr. Huan Liu</a>
+        at the <a href="https://dmml.asu.edu/home" style="color:var(--accent);text-decoration:none;">Data Mining and Machine Learning Lab</a>.
+        My research focuses on leveraging large language models for human-intensive tasks in ML pipelines, robust detection of AI-generated content, and NLP applications in domain adaptation and generalization.
+      </p>
+      <p style="color:var(--text-secondary); font-size:0.92rem; line-height:1.8; margin-top:1rem;">
+        During Summer 2024, I was an Applied Research Intern at
+        <strong style="color:var(--text)">NVIDIA NeMo Guardrails</strong>, working on inference-time safety steering of LLMs.
+        During Summer 2022, I interned at <strong style="color:var(--text)">Nokia Bell Labs</strong> on continual learning and low-resource learning.
+        When I'm not working, I enjoy traveling, hiking, kayaking, camping, and chilling with my cat Luna!
+      </p>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news-section container">
+    <h2 class="section-title">&#x1f4e2; News</h2>
+    <div class="news-list">
+      <div class="news-item"><span class="news-date">Feb 2025</span><div class="news-content">Invited to be a <strong>Program Committee Member for SIGIR 2025</strong>.</div></div>
+      <div class="news-item"><span class="news-date">Feb 2025</span><div class="news-content">Speaking at <a href="https://www.cactuscon.com/">CactusCon 13</a> on <strong>Building Trust in AI: On Safe and Responsible Use of LLMs</strong>. <a href="https://drive.google.com/file/d/1u2AHdtkxr3mFTM100FqaUAOYBqBTbfsX/view?usp=sharing">[Slides]</a></div></div>
+      <div class="news-item"><span class="news-date">Jan 2025</span><div class="news-content">Accepted a full-time offer as an <strong>Applied Scientist II at Amazon, Palo Alto, CA</strong> &mdash; working on LLM post-training and alignment!</div></div>
+      <div class="news-item"><span class="news-date">Nov 2024</span><div class="news-content">Received the <strong>NSF Travel Award</strong> for attending IEEE BigData 2024!</div></div>
+      <div class="news-item"><span class="news-date">Oct 2024</span><div class="news-content">Paper <strong>Zero-shot LLM-guided Counterfactual Generation</strong> accepted to <a href="https://www3.cs.stonybrook.edu/~ieeebigdata2024/">IEEE BigData 2024</a>!</div></div>
+      <div class="news-item"><span class="news-date">Oct 2024</span><div class="news-content">Paper <strong>Towards Inference-time Category-wise Safety Steering for LLMs</strong> accepted to the <a href="https://safegenaiworkshop.github.io/">Safe Generative AI Workshop</a> at <strong>NeurIPS 2024</strong>! [Work done at NVIDIA]</div></div>
+      <div class="news-item"><span class="news-date">Sep 2024</span><div class="news-content">Two papers accepted at <strong>EMNLP 2024 Main Track</strong>: (1) <a href="https://arxiv.org/abs/2406.12263">Defending Against Social Engineering Attacks in the Age of LLMs</a>, (2) <a href="https://arxiv.org/abs/2402.13446">Large Language Models for Data Annotation: A Survey</a>.</div></div>
+      <div class="news-item"><span class="news-date">Sep 2024</span><div class="news-content">Delivered an in-person tutorial on <strong>Defending Against Generative AI Threats in NLP</strong> at SBP-BRiMS 2024, Pittsburgh, PA.</div></div>
+      <div class="news-item"><span class="news-date">Jun 2024</span><div class="news-content">Received the <strong>SIGIR 2024 NSF Travel Award</strong>!</div></div>
+      <div class="news-item"><span class="news-date">May 2024</span><div class="news-content">My chat with ScienceNewsExplores got featured in this <a href="https://www.snexplores.org/article/a-new-test-could-help-weed-out-ai-generated-text">SNE news story</a>.</div></div>
+      <div class="news-item"><span class="news-date">Apr 2024</span><div class="news-content">Paper <strong>Towards Interpretable Hate Speech Detection using LLM-extracted Rationales</strong> accepted to <strong>NAACL WOAH 2024</strong>!</div></div>
+      <div class="news-item"><span class="news-date">Mar 2024</span><div class="news-content">Demo paper <strong>ResumeFlow</strong> accepted at <strong>SIGIR 2024</strong>! <a href="https://arxiv.org/abs/2402.06221">[Paper]</a></div></div>
+      <div class="news-item"><span class="news-date">Jan 2024</span><div class="news-content">Accepted an offer to join <strong>NVIDIA</strong> as an Applied Research Intern for Summer 2024, working on LLM Safety!</div></div>
+      <div class="news-item"><span class="news-date">Jan 2024</span><div class="news-content">Paper <strong>Adversarial Text Purification</strong> accepted at <strong>PAKDD 2024</strong>! <a href="https://arxiv.org/abs/2402.06655">[Paper]</a></div></div>
+      <div class="news-item"><span class="news-date">Nov 2023</span><div class="news-content">&#x1f3c6; Paper <strong>ConDA: Contrastive Domain Adaptation for AI-generated Text Detection</strong> won the <strong>Outstanding Paper Award</strong> at IJCNLP-AACL 2023 in Bali! <a href="https://arxiv.org/abs/2309.03992">[Paper]</a></div></div>
+    </div>
+  </section>
+
+  <!-- LUNA -->
+  <section class="luna-section container">
+    <p class="luna-header">Meet my wonderful rescue cat, <strong style="color:var(--text)">Luna</strong> &#x1f408;&#x200d;&#x2b1b;</p>
+    <div class="luna-grid">
+      <img src="images/luna1.jpg" alt="Luna the cat" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+      <img src="images/luna2.jpg" alt="Luna the cat" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+      <img src="images/luna3.jpg" alt="Luna the cat" loading="lazy" onclick="openLightbox(this.src, this.alt)">
+    </div>
+  </section>
+
+</div>
+
+<!-- ═══════════════════════════════════ PUBLICATIONS ═══════════════════════════════════ -->
+<div class="section" id="section-publications">
+  <div class="pub-page container">
+    <h2 class="section-title">Selected Publications</h2>
+    <a href="https://scholar.google.com/citations?user=hdXXMPwAAAAJ&hl=en" target="_blank" class="scholar-link">View all on Google Scholar &#x2197;</a>
+
+    <div class="pub-preprints">
+      <h3 style="font-family:'DM Serif Display',serif; font-size:1.3rem; margin-bottom:1rem; color:var(--accent-warm);">Recent Preprints</h3>
+      <div class="pub-list">
+        <div class="pub-item">
+          <span class="pub-venue">Preprint</span>
+          <div class="pub-title">EAGLE: A Domain Generalization Framework for AI-generated Text Detection</div>
+          <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>, Raha Moraffah, Joshua Garland, Huan Liu</div>
+          <a href="https://arxiv.org/abs/2403.15690" target="_blank" class="pub-link">Read paper &#x2192;</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-family:'DM Serif Display',serif; font-size:1.3rem; margin:2rem 0 1rem;">Accepted Publications</h3>
+    <div class="pub-list">
+      <div class="pub-item">
+        <span class="pub-venue">NeurIPS 2024 &mdash; Safe Generative AI</span>
+        <div class="pub-title">Towards Inference-time Category-wise Safety Steering for Large Language Models</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>*, Shaona Ghosh*, Traian Rebedea, Christopher Parisien &nbsp;[Work done at NVIDIA]</div>
+        <a href="https://arxiv.org/abs/2410.01174" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">EMNLP 2024</span>
+        <div class="pub-title">Defending Against Social Engineering Attacks in the Age of LLMs</div>
+        <div class="pub-authors">Lin Ai*, Tharindu Kumarage*, <span class="me">Amrita Bhattacharjee</span>*, Zizhou Liu, Zheng Hui, et al.</div>
+        <a href="https://arxiv.org/abs/2406.12263" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">EMNLP 2024</span>
+        <div class="pub-title">Large Language Models for Data Annotation: A Survey</div>
+        <div class="pub-authors">Zhen Tan*, Dawei Li*, Song Wang*, Alimohammad Beigi, Bohan Jiang, <span class="me">Amrita Bhattacharjee</span>, et al.</div>
+        <a href="https://arxiv.org/abs/2402.13446" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">IEEE BigData 2024</span>
+        <div class="pub-title">Zero-shot LLM-guided Counterfactual Generation: A Case Study on NLP Model Evaluation</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>, Raha Moraffah, Joshua Garland, Huan Liu</div>
+        <a href="https://arxiv.org/abs/2405.04793" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">AAAI ReLM 2024</span>
+        <div class="pub-title">Towards LLM-guided Causal Explainability for Black-box Text Classifiers</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>, Raha Moraffah, Joshua Garland, Huan Liu</div>
+        <a href="https://arxiv.org/abs/2309.13340" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">PAKDD 2024</span>
+        <div class="pub-title">Adversarial Text Purification: A Large Language Model Approach for Defense</div>
+        <div class="pub-authors">Raha Moraffah, Shubh Khandelwal, <span class="me">Amrita Bhattacharjee</span>, Huan Liu</div>
+        <a href="https://arxiv.org/abs/2402.06655" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item award">
+        <span class="pub-venue">IJCNLP-AACL 2023 <span class="award-badge">&#x1f3c6; Outstanding Paper Award</span></span>
+        <div class="pub-title">ConDA: Contrastive Domain Adaptation for AI-generated Text Detection</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>, Tharindu Kumarage, Raha Moraffah, Huan Liu</div>
+        <a href="https://arxiv.org/abs/2309.03992" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">NAACL WOAH 2024</span>
+        <div class="pub-title">Towards Interpretable Hate Speech Detection using Large Language Model-extracted Rationales</div>
+        <div class="pub-authors">Ayushi Nirmal*, <span class="me">Amrita Bhattacharjee</span>*, Paras Sheth, Huan Liu</div>
+        <a href="https://arxiv.org/abs/2403.12403" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">SIGIR 2024</span>
+        <div class="pub-title">ResumeFlow: An LLM-facilitated Pipeline for Personalized Resume Generation and Refinement</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span> et al.</div>
+        <a href="https://arxiv.org/abs/2402.06221" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">ACM SIGKDD Explorations</span>
+        <div class="pub-title">Fighting Fire with Fire: Can ChatGPT Detect AI-generated Text?</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>, Huan Liu</div>
+        <a href="https://dl.acm.org/doi/abs/10.1145/3655103.3655106" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+      <div class="pub-item">
+        <span class="pub-venue">IJCAI 2022 &mdash; Survey</span>
+        <div class="pub-title">Text Transformations in Contrastive Self-Supervised Learning: A Review</div>
+        <div class="pub-authors"><span class="me">Amrita Bhattacharjee</span>*, Mansooreh Karami*, Huan Liu</div>
+        <a href="https://www.ijcai.org/proceedings/2022/0757.pdf" target="_blank" class="pub-link">Read paper &#x2192;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ TEACHING ═══════════════════════════════════ -->
+<div class="section" id="section-teaching">
+  <div class="teaching-page container">
+    <h2 class="section-title">Teaching & Service</h2>
+
+    <!-- MENTORING -->
+    <div class="teach-block">
+      <h3>&#x1f91d; Mentoring</h3>
+      <p style="color:var(--text-secondary); font-size:0.85rem; margin-bottom:1rem;">Current Mentees</p>
+      <div class="mentee-grid">
+        <div class="mentee-card">
+          <div class="mentee-avatar">SZ</div>
+          <div class="mentee-info">
+            <div class="mentee-name">Saurabh Bhausaheb Zinjad</div>
+            <div class="mentee-role">MS CS</div>
+            <a href="https://www.linkedin.com/in/saurabhzinjad/" target="_blank">LinkedIn &#x2197;</a>
+          </div>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar">AK</div>
+          <div class="mentee-info">
+            <div class="mentee-name">Aryan Vinod Keluskar</div>
+            <div class="mentee-role">FURI Undergrad</div>
+            <a href="https://www.linkedin.com/in/aryankeluskar/" target="_blank">LinkedIn &#x2197;</a>
+          </div>
+        </div>
+      </div>
+      <p style="color:var(--text-secondary); font-size:0.85rem; margin:1.25rem 0 0.75rem;">Past Mentees</p>
+      <div class="mentee-grid">
+        <div class="mentee-card">
+          <div class="mentee-avatar" style="background:var(--gradient-2);">AN</div>
+          <div class="mentee-info">
+            <div class="mentee-name">Ayushi Nirmal</div>
+            <div class="mentee-role">MS CS</div>
+            <a href="https://www.linkedin.com/in/ayushi-nirmal/" target="_blank">LinkedIn &#x2197;</a>
+          </div>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar" style="background:var(--gradient-2);">PA</div>
+          <div class="mentee-info">
+            <div class="mentee-name">Punit Sai Arani</div>
+            <div class="mentee-role">Undergrad &mdash; Honors Thesis</div>
+            <a href="https://www.linkedin.com/in/punitarani/" target="_blank">LinkedIn &#x2197;</a>
+          </div>
+        </div>
+        <div class="mentee-card">
+          <div class="mentee-avatar" style="background:var(--gradient-2);">NB</div>
+          <div class="mentee-info">
+            <div class="mentee-name">Neha Balamurugan</div>
+            <div class="mentee-role">Undergrad &mdash; Honors Thesis</div>
+            <a href="https://www.linkedin.com/in/neha-balamurugan-8455981b1/" target="_blank">LinkedIn &#x2197;</a>
+          </div>
+        </div>
+      </div>
+      <div class="teach-card" style="margin-top:0.75rem;">
+        <p>Mentored 3 women for pursuing a research career in Computer Science via <strong>Women in Machine Learning (WiML)</strong> (Fall 2022)</p>
+      </div>
+    </div>
+
+    <!-- TEACHING -->
+    <div class="teach-block">
+      <h3>&#x1f393; Teaching</h3>
+      <div class="teach-card">
+        <h4>Fall 2024 &mdash; CSE 472: Social Media Mining</h4>
+        <p>Project Coordinator and Guest Lecturer. Guest lectures on <em>Data Mining</em> and <em>Introduction to Large Language Models: The Good, Bad and the Ugly</em>. <a href="https://docs.google.com/presentation/d/1w-ZHnCWK4SdOFzwwzuNWrPF2aKz3T-ldNSniVL-6nGQ/edit?usp=sharing" target="_blank">[Slides]</a></p>
+      </div>
+      <div class="teach-card">
+        <h4>Fall 2023 &mdash; Barrett Honors College</h4>
+        <p>Project Coordinator. Designed and developed a project on <strong>Political Bias and Strategic Influence Operations in Large Language Models</strong>. Mentored 4 undergraduate students.</p>
+      </div>
+      <div class="teach-card">
+        <h4>Fall 2023 &mdash; CSE 472: Social Media Mining</h4>
+        <p>Project Coordinator & Invited Speaker. Designed project on <strong>LLMs as Components in a ML Pipeline</strong>. Invited lecture on: <em>A Primer on Large Language Models</em>.</p>
+      </div>
+      <div class="teach-card">
+        <h4>Fall 2021 &mdash; CSE 472: Social Media Mining</h4>
+        <p>Project Coordinator. Designed project on <strong>Machine Generated Text Detection</strong>.</p>
+      </div>
+      <div class="teach-card">
+        <h4>Fall 2019 &amp; Spring 2020 &mdash; W.P. Carey School of Business</h4>
+        <p>CIS Research Aide under Prof. Daniel Mazzola. Assisted with CIS 430, CIS 505, and CIS 506.</p>
+      </div>
+      <div class="teach-card">
+        <h4>Fall 2019 &mdash; CSE 110: Principles of Programming (Java)</h4>
+        <p>Teaching Assistant. Taught recitals (labs), grading, and held office hours.</p>
+      </div>
+    </div>
+
+    <!-- SERVICE -->
+    <div class="teach-block">
+      <h3>&#x1f4cb; Reviewing & Conference Duties</h3>
+      <div class="service-list">
+        <div class="service-item">
+          <strong>Program Committee:</strong> IJCAI 2025 (Survey), SIGIR 2025, SDM 2025, AAAI 2025, AAAI 2024, AAAI 2023, IJCAI 2024 (Survey), SBP-BRiMS 2024, SBP-BRiMS 2023
+        </div>
+        <div class="service-item">
+          <strong>External Reviewer:</strong> SNAM, JNCA, IPM, CogSys, Behavior & IT, MINT Workshop (NeurIPS 2024), SSHO (Elsevier), ACL SRW 2025, IJCAI HAI 2025
+        </div>
+        <div class="service-item">
+          <strong>Student Volunteer:</strong> 15th ACM International WSDM Conference (WSDM 2022)
+        </div>
+        <div class="service-item">
+          <strong>Panel Facilitator:</strong> ASU-Mayo Workshop on Generative AI and LLMs for Healthcare 2023 &mdash; facilitated panels on Clinical Decision Support with LLMs and Validation of AI-generated Medical Research
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════ TRAVEL ═══════════════════════════════════ -->
+<div class="section" id="section-travel">
+  <div class="travel-page container">
+    <h2 class="section-title">&#x1f30d; Travel Glimpses</h2>
+    <p class="travel-intro">
+      When I'm not working on NLP and AI safety, I love exploring new places &mdash; from desert hikes in Arizona to kayaking trips and everything in between. Here's where my adventures take me.
+    </p>
+
+    <!-- PLACEHOLDER CARDS - ready to fill with real photos -->
+    <div class="travel-grid">
+      <div class="travel-card" onclick="openLightboxFromCard(this)">
+        <div class="travel-card-img" data-src="images/glacier-1.jpg" style="background-image: url('images/glacier-1.jpg');"></div>
+        <div class="travel-card-body">
+          <div class="travel-card-location">Glacier National Park, Montana</div>
+          <div class="travel-card-title">Mountain Adventures</div>
+          <div class="travel-card-desc">Hiking trails, summit views, and alpine landscapes.</div>
+        </div>
+      </div>
+      <div class="travel-card" onclick="openLightboxFromCard(this)">
+        <div class="travel-card-img" data-src="images/desert-1.jpg" style="background-image: url('images/sedona-1.jpg');"></div>
+        <div class="travel-card-body">
+          <div class="travel-card-location">View from the highest point in Sedona, Mt. Williams</div>
+          <div class="travel-card-title">Desert Explorations</div>
+          <div class="travel-card-desc">Sunsets, red rocks, and the beauty of the Southwest.</div>
+        </div>
+      </div>
+      <div class="travel-card" onclick="openLightboxFromCard(this)">
+        <div class="travel-card-img" data-src="images/kayaking-1.jpg" style="background-image: url('images/kayak-1.jpg');"></div>
+        <div class="travel-card-body">
+        </div>
+        <div class="travel-card-body">
+          <div class="travel-card-location">Whitehorse Lake, Arizona</div>
+          <div class="travel-card-title">Water & Kayaking</div>
+          <div class="travel-card-desc">Rivers, lakes, and paddling through serene waters.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="travel-placeholder">
+      <div class="travel-placeholder-icon">&#x1f4f7;</div>
+      <h3>More photos coming soon!</h3>
+      <p>This section is ready for your travel photography. Add your images to the <code style="color:var(--accent); font-family:'JetBrains Mono',monospace; font-size:0.82rem;">images/</code> folder and update the HTML to showcase your adventures.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ LIGHTBOX ═══ -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">&#x2715;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(event, -1)" aria-label="Previous">&#x2039;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(event, 1)" aria-label="Next">&#x203a;</button>
+  <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <p>&copy; 2025 Amrita Bhattacharjee &middot; Built with care &middot; <a href="mailto:amy.asu10@gmail.com">Contact Me!</a></p>
+</footer>
+
+<script>
+// ── Tab navigation ──
+function showSection(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.getElementById('section-' + name).classList.add('active');
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.dataset.section === name);
+  });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+// ── Lightbox ──
+let galleryImages = [];
+let currentIndex = 0;
+
+function collectGallery() {
+  galleryImages = [];
+  // Collect all clickable images on the currently active section
+  const activeSection = document.querySelector('.section.active');
+  if (!activeSection) return;
+
+  // Luna images
+  activeSection.querySelectorAll('.luna-grid img').forEach(img => {
+    galleryImages.push({ src: img.src, caption: img.alt });
+  });
+
+  // Travel cards with real images (data-src set)
+  activeSection.querySelectorAll('.travel-card').forEach(card => {
+    const imgDiv = card.querySelector('.travel-card-img');
+    const src = imgDiv.getAttribute('data-src') || '';
+    if (!src) return; // skip placeholder cards with no image
+    const title = card.querySelector('.travel-card-title')?.textContent || '';
+    const loc = card.querySelector('.travel-card-location')?.textContent || '';
+    galleryImages.push({ src, caption: loc + (loc && title ? ' — ' : '') + title });
+  });
+
+  // Also check across all sections for the travel page
+  if (!galleryImages.length) {
+    document.querySelectorAll('.travel-card').forEach(card => {
+      const imgDiv = card.querySelector('.travel-card-img');
+      const src = imgDiv.getAttribute('data-src') || '';
+      if (!src) return;
+      const title = card.querySelector('.travel-card-title')?.textContent || '';
+      const loc = card.querySelector('.travel-card-location')?.textContent || '';
+      galleryImages.push({ src, caption: loc + (loc && title ? ' — ' : '') + title });
+    });
+  }
+}
+
+function openLightbox(src, caption) {
+  collectGallery();
+  currentIndex = galleryImages.findIndex(g => g.src === src);
+  if (currentIndex === -1) {
+    currentIndex = 0;
+    galleryImages = [{ src, caption }];
+  }
+  showLightboxImage();
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function openLightboxFromCard(card) {
+  const imgDiv = card.querySelector('.travel-card-img');
+  // Try data-src first, then extract from background-image
+  let src = imgDiv.getAttribute('data-src') || '';
+  if (!src) {
+    const bg = imgDiv.style.backgroundImage;
+    const match = bg.match(/url\(['"]?(.+?)['"]?\)/);
+    if (match) src = match[1];
+  }
+  if (!src) return; // no image to show
+
+  const title = card.querySelector('.travel-card-title')?.textContent || '';
+  const loc = card.querySelector('.travel-card-location')?.textContent || '';
+  const caption = loc + (loc && title ? ' — ' : '') + title;
+
+  collectGallery();
+  currentIndex = galleryImages.findIndex(g => g.src === src);
+  if (currentIndex === -1) {
+    currentIndex = 0;
+    galleryImages = [{ src, caption }];
+  }
+  showLightboxImage();
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function showLightboxImage() {
+  const item = galleryImages[currentIndex];
+  if (!item) return;
+  document.getElementById('lightbox-img').src = item.src;
+  document.getElementById('lightbox-img').alt = item.caption;
+  document.getElementById('lightbox-caption').textContent = item.caption;
+
+  // Show/hide nav arrows
+  const showNav = galleryImages.length > 1;
+  document.querySelector('.lightbox-prev').style.display = showNav ? 'flex' : 'none';
+  document.querySelector('.lightbox-next').style.display = showNav ? 'flex' : 'none';
+}
+
+function closeLightbox(e) {
+  // Don't close if clicking on the image or nav buttons
+  if (e && (e.target.tagName === 'IMG' || e.target.closest('.lightbox-nav'))) return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function navLightbox(e, dir) {
+  e.stopPropagation();
+  currentIndex = (currentIndex + dir + galleryImages.length) % galleryImages.length;
+  showLightboxImage();
+}
+
+// Keyboard support
+document.addEventListener('keydown', function(e) {
+  const lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox({});
+  if (e.key === 'ArrowLeft') navLightbox(e, -1);
+  if (e.key === 'ArrowRight') navLightbox(e, 1);
+});
+</script>
+
+</body>
+</html>
